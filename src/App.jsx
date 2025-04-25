@@ -2,7 +2,8 @@ import { useState } from "react";
 import Search from "./components/Search";
 import FoodList from "./components/FoodList";
 import Nav from "./components/Nav";
-import "./App.css"
+import "./App.css";
+import Container from "./components/Container";
 export default function App() {
   const [foodData, setFoodData] = useState([]);
 
@@ -10,10 +11,10 @@ export default function App() {
     <div>
       <Nav />
       <Search setFoodData={setFoodData} />
-      <FoodList foodData={foodData} />
+      <Container>
+        <FoodList foodData={foodData} />
+   
+      </Container>
     </div>
   );
 }
-
-
-
