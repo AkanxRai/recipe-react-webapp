@@ -8,7 +8,7 @@ import InnerComponent from "./components/InnerComponent";
 import FoodDetail from "./components/FoodDetail";
 export default function App() {
   const [foodData, setFoodData] = useState([]);
-  const [foodId, setFoodId] = useState("");
+  const [foodId, setFoodId] = useState("658615");
 
   return (
     <div>
